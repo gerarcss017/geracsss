@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: hsl(0, 0%, 0%);
+}
+
+header {
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+
+}
+
+.ventana {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid rgb(0, 149, 255);
+  background-color: hwb(0 59% 41%);
+  color: rgb(0, 0, 0);
+  padding: 70px;
+  box-shadow: 0 4px 8px hsla(0, 76%, 50%, 0.1);
+  z-index: 999; /* Para asegurarse de que esté por encima de otros elementos */
+}
+
+.ventana-contenido {
+  text-align: center; /* Centrar el contenido */
+  color: ;
+}
+
+.cerrar {
+  color: rgb(221, 0, 0);
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+#productos {
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  background: hwb(0 0% 100%);
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  width: 30%;
+  float: left;
+  padding: 30px;
+}
+
+#contacto {
+  background-color: hsl(0, 0%, 100%);
+  padding: 50px;
+}
+
+footer {
+  background-color: #a2a2a2;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilos para el carrito en la esquina superior derecha */
+.carrito-icono {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Estilos para el carrito flotante */
+.carrito {
+  display: none;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  padding: 10px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(0, 0%, 3%);
+  border: 1px solid rgb(2, 183, 255);
+}
+
+.carrito h2 {
+  text-align: center;
+}
+
+.carrito ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.carrito ul li {
+  margin-bottom: 10px;
+}
+
+.carrito img {
+  vertical-align: middle;
+}
+
+.carrito span {
+  margin-left: 5px;
+}
