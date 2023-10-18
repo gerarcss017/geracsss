@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accesorios para Motos</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div align="center">
+    <h1>Bienvenido Bikers</h1>
+  </div>
+</header>
+
+<div align="center">
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="row">
+      <!-- Accesorio: Casco -->
+      <div class="column">
+        <img src="Casco.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Casco Agu', 50)">Casco Agu - $50</a></p>
+
+        <img src="Casco2.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Casco Agu', 50)">Casco Agu de color - $50</a></p>
+
+        <img src="CascoFX.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Casco Agu', 50)">Casco Fox Rosa - $50</a></p>
+
+        <img src="Cascofx1.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Casco Agu', 50)">Casco Fox Azul - $50</a></p>
+
+        <img src="Cscofx2.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Casco Agu', 50)">Casco Fox Blanco y Negro - $50</a></p>
+
+
+
+      </div>
+      <!-- Accesorio: Guantes -->
+      <div class="column">
+        <img src="Guantes.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Guantes', 30)">Guantes - $30</a></p>
+      </div>
+      <!-- Accesorio: Chaqueta -->
+      <div class="column">
+        <img src="Chaqueta.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Chaqueta Harley-Davidson de cuero', 120)">Chaqueta Harley-Davidson de cuero - $120</a></p>
+      
+        <img src="Traje.png" width="30%">
+        <p><a href="#" onclick="mostrarDetalle('Conjunto de Proteccion', 120)">Conjunto de Protecion - $200</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+  <p>Para consultas, puedes comunicarte con nosotros al <strong>Teléfono: 123-456-789</strong> o a través del correo electrónico: <strong>info@tutiendademotos.com</strong></p>
+</section>
+
+<footer>
+  <p>&copy; 2023 Accesorios para Motos</p>
+</footer>
+
+<!-- Carrito en la esquina superior derecha -->
+<div id="carrito-icono" class="carrito-icono" onclick="mostrarCarrito()">
+  <img src="carrito.png" width="30" height="30" alt="Carrito">
+  <span id="carrito-cantidad">0</span>
+</div>
+
+<!-- Carrito flotante -->
+<div id="carrito" class="carrito">
+  <h2>Carrito</h2>
+  <ul id="listaCarrito">
+    <!-- Aquí se mostrarán los elementos del carrito -->
+  </ul>
+  <p>Total: $<span id="totalCarrito">0</span></p>
+</div>
+
+<!-- Ventana flotante de detalle -->
+<div id="ventana" class="ventana">
+  <div class="ventana-contenido">
+    <span class="cerrar" onclick="ocultarVentana()">&times;</span>
+    <p id="productoSeleccionado"></p>
+    <p id="precioProducto"></p>
+    <button onclick="agregarAlCarrito()">A&ntilde;adir al carrito</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
